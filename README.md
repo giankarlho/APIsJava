@@ -8,6 +8,7 @@ Consumo de algunas APIs
 1. Consulta DNI:
 
  Content-Type  | string     |  application/json
+ ------------- | ---------- |  ------------------
  Authorization |   string   |  Bearer {token}
 
 
