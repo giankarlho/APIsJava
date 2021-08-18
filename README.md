@@ -5,7 +5,7 @@ Consumo de algunas APIs
 * Server: GlassFish Server 4.1.1
 * Java EE Versión: Java EE 7 Web
 
-1. Consulta DNI
+1. Consulta DNI:
 * Content-Type      string        application/json
 * required          
 
