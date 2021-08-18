@@ -8,6 +8,7 @@ Consumo de algunas APIs
 1. Consulta DNI:
  Content-Type | string  |  application/json
  Authorization |    string  |  Bearer {token}
+ ---------------------------------------------
 3. Consulta RUC
 4. Consulta de Validez CPE
 5. Consulta del Tipo de Cambio
