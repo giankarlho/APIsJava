@@ -6,11 +6,11 @@ Consumo de algunas APIs
 * Java EE Versión: Java EE 7 Web
 
 1. Consulta DNI
-Content-Type      string        application/json
-required          
+* Content-Type      string        application/json
+* required          
 
-Authorization     string        Bearer {token}
-required
+* Authorization     string        Bearer {token}
+* required
 
 
 
