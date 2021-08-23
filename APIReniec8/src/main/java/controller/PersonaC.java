@@ -21,13 +21,20 @@ public class PersonaC implements Serializable {
     }
 
     public void buscarDNI() {
-        try {
-            System.out.println("persona DNI" + persona.getDni());
-            ReniecS.buscardni(persona);
-            System.out.println("Apellido materno: " + persona.getApeMaterno());
+        try {            
+            ReniecS.buscarDni(persona);
         } catch (Exception e) {
-            FacesContext.getCurrentInstance().addMessage(null,new FacesMessage(FacesMessage.SEVERITY_FATAL, "Busqueda", "DNI no encontrado"));
+            FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_FATAL, "Busqueda", "DNI no encontrado"));
             System.out.println("error en Busqueda DNI" + e.getMessage());
+        }
+    }
+
+    public void buscarRUC() {
+        try {            
+            ReniecS.buscarRuc(persona);            
+        } catch (Exception e) {
+            FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_FATAL, "Busqueda", "RUC no encontrado"));
+            System.out.println("error en Busqueda RUC" + e.getMessage());
         }
     }
 

@@ -13,5 +13,8 @@ public class Persona implements Serializable {
     String apeMaterno;
     
     // Persona jurídica
-    
+    String ruc;
+    String razon;
+    String dirección;
+    String ubigeo;
 }
