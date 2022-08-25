@@ -11,6 +11,14 @@ import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
 import model.Persona;
 
+
+/*
+
+Creado por Giancarlo Valencia Sotomayor
+Consumo de apis DNI y RUC de https://dniruc.apisperu.com
+
+*/
+
 public class ReniecS1 {
 
     public static void buscarDni(Persona per) throws Exception {
