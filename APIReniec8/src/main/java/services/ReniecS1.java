@@ -9,12 +9,9 @@ import java.net.URL;
 import java.net.URLConnection;
 import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
-import javax.xml.ws.Response;
 import model.Persona;
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
 
-public class ReniecS {
+public class ReniecS1 {
 
     public static void buscarDni(Persona per) throws Exception {
         String dni = per.getDni();
@@ -84,40 +81,4 @@ public class ReniecS {
         buscarRuc(per);
     }
 
-//    public static void buscarRuc2(Persona per) throws Exception {
-//        try {
-//            String ruc = per.getRuc();
-//            OkHttpClient client = new OkHttpClient().newBuilder()
-//                    .build();
-//            Request request = new Request.Builder()
-//                    .url("https://apiperu.dev/api/ruc/" + ruc)
-//                    .method("GET", null)
-//                    .addHeader("Authorization", "Bearer 1bb45424279b9f905b6e89184dfc2e216cd9ccb81f5b1d83ff69fe583e5f787d")
-//                    .addHeader("Content-Type", "application/json")
-//                    .build();
-//            okhttp3.Response response = client.newCall(request).execute();
-////            per.setDirección(response.body());
-//            
-//            JsonParser jp = new JsonParser();
-//            JsonElement root = jp.parse(response.body().toString());
-//            if (root.isJsonObject()) {
-//                JsonObject rootobj = root.getAsJsonObject();
-//                String razon = rootobj.get("nombre_o_razon_social").getAsString();
-//                String direccion = rootobj.get("direccion").getAsString();
-//                String ubigeo = rootobj.get("ubigeo").getAsString();
-//
-//                System.out.println("Resultado\n");
-//                System.out.println(razon + "\n" + direccion + "\n" + ubigeo + "\n");
-//
-//                per.setRazon(razon);
-//                per.setDirección(direccion);
-//                per.setUbigeo(ubigeo);
-//            }
-//            
-//        } catch (Exception ex) {
-//            System.out.println(ex.getMessage());
-//            FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_FATAL, "Busqueda", "RUC no encontrado"));
-//        }
-//
-//    }
 }
