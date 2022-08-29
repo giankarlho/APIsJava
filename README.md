@@ -23,20 +23,19 @@ II. **Fuente 2: [apiperu](https://apiperu.dev/)**
 
 	1. Consulta DNI:
 
-**Headers**
+	**Headers**
 
- Content-Type  | string     |  application/json
- ------------- | ---------- |  ------------------
- Authorization |  string    |  Bearer {token}
+	 Content-Type  | string     |  application/json
+	 ------------- | ---------- |  ------------------
+	 Authorization |  string    |  Bearer {token}
 
+	2. Consulta RUC
 
-2. Consulta RUC
+	**Headers**
 
-**Headers**
+	 Content-Type  | string     |  application/json
+	 ------------- | ---------- |  ------------------
+	 Authorization |   string   |  Bearer {token}
 
- Content-Type  | string     |  application/json
- ------------- | ---------- |  ------------------
- Authorization |   string   |  Bearer {token}
-
-3. Consulta de Validez CPE
-4. Consulta del Tipo de Cambio
+	3. Consulta de Validez CPE
+	4. Consulta del Tipo de Cambio
