@@ -12,11 +12,10 @@ import javax.faces.context.FacesContext;
 import model.Persona;
 
 
-/*
-
-Creado por Giancarlo Valencia Sotomayor
-Consumo de apis DNI y RUC de https://dniruc.apisperu.com
-
+/**
+* @author Giancarlo Valencia Sotomayor
+* Consumo de apis DNI y RUC de https://dniruc.apisperu.com
+* ***********    JsonParser   **************
 */
 
 public class ReniecS1 {
