@@ -7,8 +7,10 @@ import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
 import lombok.Data;
 import model.Persona;
-import org.primefaces.shaded.json.JSONObject;
+import org.json.JSONObject;
+
 import services.ReniecS1;
+import services.ReniecS2;
 import services.ReniecS3;
 
 @Data
@@ -42,7 +44,10 @@ public class PersonaC implements Serializable {
 
     public void buscarDNI2() {
         try {
-
+            JSONObject cadenaJson = ReniecS2.buscarDni(persona);
+            persona.setApePaterno(cadenaJson.getString("apellido_paterno"));
+            persona.setApeMaterno(cadenaJson.getString("apellido_materno"));
+            persona.setNombre(cadenaJson.getString("nombres"));
         } catch (Exception e) {
             FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_FATAL, "Busqueda", "DNI no encontrado"));
             System.out.println("error en Busqueda DNI" + e.getMessage());

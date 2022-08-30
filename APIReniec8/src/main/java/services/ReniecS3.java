@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package services;
 
 import model.Persona;
@@ -10,7 +6,7 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
-import org.primefaces.shaded.json.JSONObject;
+import org.json.JSONObject;
 
 /**
  *
@@ -19,6 +15,7 @@ import org.primefaces.shaded.json.JSONObject;
  * Consumo de apis DNI y RUC de https://apiperu.dev/
  *
  */
+
 public class ReniecS3 {
 
     public static JSONObject buscarDni(Persona per) throws Exception {
